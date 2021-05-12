@@ -1,0 +1,20 @@
+adonis new server --api-only
+
+adonis serve --help
+
+cd server
+adonis serve --dev
+
+adonis make:controller User
+-> http controller
+
+npm install sqlite3 --save
+
+adonis migration:run
+
+adonis make:model Project -m
+    -- write migration code --
+
+adonis migration:run
+
+adonis make:controller Project
